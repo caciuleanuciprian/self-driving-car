@@ -8,9 +8,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <canvas id="myCanvas"></canvas>
+    <div class="verticalButtons">
+      <p>Simulations: <span id="simulations"></span></p>
+      <button onclick="start()">Start</button>
+      <button onclick="restart()">Restart</button>
+      <br />
+      <button id="save">Save</button>
+      <button id="discard">Discard</button>
+    </div>
+
+    <canvas id="carCanvas"></canvas>
+    <canvas id="networkCanvas"></canvas>
   </body>
   <script src="./utils.js"></script>
+  <script src="./visualizer.js"></script>
+  <script src="./network.js"></script>
   <script src="./sensor.js"></script>
   <script src="./road.js"></script>
   <script src="./controls.js"></script>
